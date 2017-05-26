@@ -8,18 +8,21 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Quero ir</a>
+                <a class="navbar-brand" href="/queroir/index.php">Quero ir</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="/queroir/index.php">Home</a>
                     </li>
                     <li>
-                        <a href="#">Eventos</a>
+                        <a href="?pg=Config/listaEventos">Eventos</a>
                     </li>
                     <li>
-                        <a href="#">Contato</a>
+                        <a href="?pg=Config/contato">Contato</a>
+                    </li>
+                    <li>
+                        <a href="?pg=Config/about">Sobre</a>
                     </li>
 				</ul>
 			<ul class="nav navbar-nav navbar-right">
@@ -29,3 +32,4 @@
             </div>
         </div>
     </nav>
+<br><br><br><br>

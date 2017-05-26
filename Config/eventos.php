@@ -1,6 +1,4 @@
-<br><br><br><br>
-	<!-- Page Content -->
-    <div class="container">
+   <div class="container">
 
         <!-- Jumbotron Header -->
         <header class="jumbotron hero-spacer">
@@ -30,7 +28,7 @@
                         <h3>Feature Label</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Continuar lendo</a> <a href="#" class="btn btn-default">More Info</a>
+                            <a href="#" class="btn btn-primary">Continuar lendo</a>
                         </p>
                     </div>
                 </div>

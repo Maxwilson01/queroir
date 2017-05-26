@@ -1,5 +1,6 @@
+
 <div class="container">
-    <h3>Contato</h3>   
+    <h3>Fale conosco</h3>   
  <form  id="contactForm" action="#/MasterG/Model/ControllerContato.php" method="post">
      
  	<label>Nome:</label> <input type="text" class="form-control" name="nome" required="" data-validation-required-message="Please enter your name.">
