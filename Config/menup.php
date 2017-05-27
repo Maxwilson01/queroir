@@ -16,7 +16,7 @@
                         <a href="/queroir/index.php">Home</a>
                     </li>
                     <li>
-                        <a href="?pg=Config/listaEventos">Eventos</a>
+                        <a href="?pg=Config/listarEventos">Eventos</a>
                     </li>
                     <li>
                         <a href="?pg=Config/contato">Contato</a>
@@ -26,8 +26,8 @@
                     </li>
 				</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				<li><a href="#/queroir/PainelAdmin/Model/Cadastrar.php"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+				<li><a href="#/queroir/PainelAdmin/login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 			</ul>
             </div>
         </div>
