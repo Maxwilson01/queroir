@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="fb:app_id" content="685701084961846" />
   <link rel="stylesheet" href="Config/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="Config/css/config.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
@@ -25,5 +26,4 @@
     <script src="Config/bootstrap/js/jquery.js"></script>
     <script src="Config/bootstrap/js/bootstrap.min.js"></script>
 </body>
-
 </html>

@@ -1,7 +1,7 @@
 <div class="divcontato">
 	<div class="container">
 	    <h3>Fale conosco</h3>   
-		 <form  id="contactForm" action="#/MasterG/Model/ControllerContato.php" method="post">
+		 <form  id="contactForm" action="/queroir/Model/CContato.php" method="post">
 		     
 		 	<label>Nome:</label> <input type="text" class="form-control" name="nome" required="" data-validation-required-message="Please enter your name.">
 		 	E-mail: <input type="email" class="form-control" name="email"/>

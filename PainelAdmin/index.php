@@ -41,10 +41,10 @@ include "controller/config.inc.php";
                     <a href="?pg=controller/listarContatos">Contatos</a>
                 </li>
                 <li>
-                    <a href="?pg=controller/listarAdmin">Clientes</a> 
+                    <a href="?pg=controller/listarCliente">Clientes</a> 
                 </li>
                 <li>
-                    <a href="?pg=controller/inserirAdmin">Cadastrar cliente</a>
+                    <a href="?pg=controller/inserirCliente">Cadastrar cliente</a>
                 </li>
                 <li>
                     <a href="?pg=class/logout">Sair</a>
@@ -74,8 +74,10 @@ include "controller/config.inc.php";
     ?>
         
         <hr>
-        <?php //include "/queroir/Config/PainelAdmin/footer.php"; ?>
+        <br><br><br><br>
+        <?php include "controller/footer.php"; ?>
     </div>
+
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>

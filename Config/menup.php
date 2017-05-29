@@ -19,17 +19,15 @@
                     <a href="?pg=Config/listarEventos">Eventos</a>
                 </li>
                 <li>
-                    <a href="?pg=Config/contato">Contato</a>
-                </li>
-                <li>
                     <a href="?pg=Config/about">Sobre</a>
                 </li>
 			</ul>
-		<ul class="nav navbar-nav navbar-right">
-			<li><a href="#/queroir/PainelAdmin/Model/Cadastrar.php"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
-			<li><a href="#/queroir/PainelAdmin/login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		      <ul class="nav navbar-nav navbar-right">
+			     <li><a href="?pg=Config/Cadastrar"><span class="glyphicon glyphicon-user"></span>Sign Up</a>
+                 </li>
+			 <li><a href="/queroir/PainelAdmin/login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 		</ul>
         </div>
     </div>
 </nav>
-<br>
+<br><br><br><br>

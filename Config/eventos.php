@@ -1,5 +1,13 @@
+<?php 
+include_once("config.inc.php");
+
+
+$busca = "SELECT * FROM evento_insc ORDER BY RAND() LIMIT 4";
+$todos = mysqli_query($conexao, $busca);
+ ?>   
    <div class="diveventos">
    <div class="container">
+   
         <!--
         <header class="jumbotron hero-spacer">
             <h1>Bem vindo(a) ao quero ir!</h1>
@@ -16,58 +24,25 @@
             </div>
         </div>
         -->
+        
         <div class="row text-center">
+            <?php while ($dados=mysqli_fetch_array($todos)) { ?> 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <img src="<?=$dados['imagem'];?>" alt="">
                     <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">Continuar lendo</a>
-                        </p>
+                        <h3><?=$dados['titulo'];?></h3>
+                        <?php 
+                        $res = substr($dados['descricao'],0,128);
+                        echo "<p>$res ...</p>";
+                        $id = $dados['idEvento'];
+                        echo "<p><a href='?pg=Config/LendoEvento&id=$id' class='btn btn-primary'>Continuar lendo</a></p>"
+                        ?>
                     </div>
-                </div>
-            </div>
 
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
-                    <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">Continuar lendo</a>
-                        </p>
-                    </div>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
-                    <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">Continuar lendo</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
-                    <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">Continuar lendo</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+          <?php } ?>
+        </div>    
     </div>
 </div>
