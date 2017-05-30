@@ -4,7 +4,6 @@ include "controller/config.inc.php";
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +13,9 @@ include "controller/config.inc.php";
     <title>cPainel</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/simple-sidebar.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="ckeditor/ckeditor.js"></script>
+
 </head>
 
 <body>
@@ -30,6 +32,9 @@ include "controller/config.inc.php";
                 </li>
                 <li>
                     <a href="index.php">Home</a>
+                </li>
+                <li>
+                    <a href="../index.php">Ir ao Site</a>
                 </li>
                 <li>
                     <a href="?pg=controller/listarEventos">Evento</a>
@@ -86,5 +91,6 @@ include "controller/config.inc.php";
         $("#wrapper").toggleClass("toggled");
     });
     </script>
+
 </body>
 </html>

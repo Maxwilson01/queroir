@@ -86,13 +86,13 @@ if(isset($_POST['login'])){
                                 <div class="form-group">
                                     <input value="<?php if(isset($_SESSION['email'])) echo $_SESSION['email']; ?>" class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
                                 </div>
+                                <div class="form-group">
+                                    <input class="form-control" required placeholder="Senha" name="password" type="password" value="">
+                                </div>
                                 <div class="checkbox">
                                     <label>
                                         <input name="remember" type="checkbox" value="Remember Me">Lembrar-me
                                     </label>
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" required placeholder="Senha" name="password" type="password" value="">
                                 </div>
                                 <button type="submit" name="login" value="true" class="btn btn-primary btn-block">Login</button>
                             </fieldset>

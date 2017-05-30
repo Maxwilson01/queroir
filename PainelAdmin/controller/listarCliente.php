@@ -23,12 +23,12 @@ $todos = mysqli_query($conexao, $busca);?>
     <div class="row">
         <div class="col-lg-12">
         <table>
-            <tr>
+           <tr>
                 <td style="width: 60px;">ID:</td>
                 <td style="width: 205px;">Nome completo:</td>
-                <td style="width: 305px;">Nome:</td>
-                <td style="width: 105px;">E-mail:</td>
-                <td style="width: 105px;">tipo:</td>
+                <td style="width: 105px;">Nome:</td>
+                <td style="width: 200px;">E-mail:</td>
+                <td style="width: 150px;">tipo:</td>
                 <td style="width: 105px;">Alterar</td>
                 <td style="width: 105px;">Excluir</td>
              </tr>

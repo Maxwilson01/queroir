@@ -25,9 +25,9 @@ $todos = mysqli_query($conexao, $busca);?>
             <tr>
                 <td style="width: 60px;">ID:</td>
                 <td style="width: 205px;">Titulo:</td>
-                <td style="width: 105px;">Organização:</td>
-                <td style="width: 105px;">E-mailOrg:</td>
-                <td style="width: 105px;">Descrição:</td>
+                <td style="width: 150px;">Organização:</td>
+                <td style="width: 250px;">E-mailOrg:</td>
+                <td style="width: 190px;">Data inicio do Evento:</td>
                 <td style="width: 105px;">Alterar</td>
                 <td style="width: 105px;">Excluir</td>
              </tr>
@@ -38,10 +38,10 @@ $todos = mysqli_query($conexao, $busca);?>
             <td><?=$dados['titulo'];?></td>
             <td><?=$dados['organizador'];?></td>
             <td><?=$dados['emailOrg'];?></td>
-            <td><?=$dados['descricao'];?></td>
+            <td><?=$dados['dataIniEv'];?></td>
             <td><a href="?pg=controller/alterarEvento&id=<?=$dados['idEvento']; ?>" class="btn btn-default" role="button">Alterar</a></td>
             
-            <td><a href="javascript:confirmaExclusao('?pg=controller/excluirdb&id=<?=$dados['idEvento']; ?>')" class="btn btn-warning" role="button">Excluir</a></td>
+            <td><a href="javascript:confirmaExclusao('?pg=controller/excluirdbEvento&id=<?=$dados['idEvento']; ?>')" class="btn btn-warning" role="button">Excluir</a></td>
             
         </tr>
     </div>  
@@ -50,3 +50,4 @@ $todos = mysqli_query($conexao, $busca);?>
     </div>
     </div>
 </div>
+

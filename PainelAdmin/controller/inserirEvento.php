@@ -43,7 +43,7 @@ require_once("class/protect.php"); ?>
             </tr>
             <tr>
                 <td>Preço: </td>
-                <td><input name="preco" class="form-control" type="text"/></td>
+                <td><input name="preco" class="form-control" type="number"/></td>
             </tr>
             <tr>
                 <td>Imagem: </td>
@@ -55,7 +55,7 @@ require_once("class/protect.php"); ?>
             </tr>
             <tr>
                 <td>Descrição: </td>
-                <td><textarea name="descricao" class="form-control" id="texto" rows="10" cols="100"></textarea></td>
+                <td><textarea name="descricao" class="ckeditor form-control" id="ckeditor" rows="10" cols="100"></textarea></td>
             </tr>
             <tr>
                 <td></td>

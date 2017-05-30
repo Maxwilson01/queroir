@@ -67,7 +67,7 @@ while($dados=mysqli_fetch_array($busca)){
             </tr>
             <tr>
                 <td>Descrição: </td>
-                <td><textarea name="descricao" class="form-control" id="texto" rows="10" cols="100"><?=$dados['descricao'];?></textarea></td>
+                <td><textarea name="descricao" class="ckeditor form-control" id="texto" rows="10" cols="100"><?php echo $dados["descricao"];?></textarea></td>
             </tr>
             <tr>
                 <td></td>
