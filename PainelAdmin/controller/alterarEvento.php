@@ -1,13 +1,16 @@
 <?php
+
 require_once("class/protect.php");
+
 header("content-type: text/html; charset=utf-8");
+
 $id = $_GET['id'];
 $sql = "SELECT * FROM evento_insc WHERE idEvento = $id";
 
 $busca = mysqli_query($conexao, $sql);
 
 while($dados=mysqli_fetch_array($busca)){  
-    echo date('d/m/Y', strtotime($dados['dataIniEv']));
+    
 ?>
 <div class="row">
     <div class="container">
@@ -28,11 +31,11 @@ while($dados=mysqli_fetch_array($busca)){
             </tr>
             <tr>
                 <td>Data de inicio do evento: </td>
-                <td><input name="DataIn" value="<?php date('Y/m/d', strtotime($dados['dataIniEv'])); ?>" class="form-control" type="date" required="required"/></td>
+                <td><input name="DataIn" value="<?php echo $dados['dataIniEv']; ?>" class="form-control" type="date" required="required"/></td>
             </tr>
              <tr>
                 <td>Data final do evento: </td>
-                <td><input name="DataFim" value="<?php date('d/m/Y', strtotime($dados['dataFimEv'])); ?>" class="form-control" type="date" required="required"/></td>
+                <td><input name="DataFim" value="<?php echo $dados['dataFimEv']; ?>" class="form-control" type="date" required="required"/></td>
             </tr>
             <tr>
                 <td>Localidade: </td>
@@ -44,11 +47,11 @@ while($dados=mysqli_fetch_array($busca)){
             </tr>
             <tr>
                 <td>Data da incrição: </td>
-                <td><input name="dataInc"  value="<?php date('d/m/Y', strtotime($dados['dataIniInsc'])); ?>" class="form-control" type="date" required="required"/></td>
+                <td><input name="dataInc"  value="<?php echo $dados['dataIniInsc']; ?>" class="form-control" type="date" required="required"/></td>
             </tr>
             <tr>
                 <td>Data da incrição final: </td>
-                <td><input name="dataIncFim" value="<?php date('d/m/Y', strtotime($dados['dataFimInsc'])); ?>" class="form-control" type="date" required="required"/></td>
+                <td><input name="dataIncFim" value="<?php echo $dados['dataFimInsc']; ?>" class="form-control" type="date" required="required"/></td>
             </tr>
             <tr>
                 <td>Preço: </td>
