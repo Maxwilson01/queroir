@@ -4,7 +4,7 @@ include_once("config.inc.php");
 $busca = "Select * from evento_insc order by idEvento";
 $todos = mysqli_query($conexao, $busca);?>
 
-<div class="container">
+<div class="container"><br><br><br>
   <?php while ($dados=mysqli_fetch_array($todos)) {?>
   <div class="media">
   

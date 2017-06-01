@@ -1,4 +1,4 @@
-<div id="divabout">
+<div id="divabout"><br><br><br>
 	<div class="container">
 		<div class="row text-">
 			<div class="col-sm-6">

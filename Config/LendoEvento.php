@@ -9,8 +9,7 @@ while ($dados=mysqli_fetch_array($todos)) {
 $urlvid = $dados['video'];
 $videoMP = "<video width='320' height='240' controls><source src='$urlvid' type='video/mp4'></video>";
 ?>
-<meta property="fb:app_id" content="685701084961846" />
-<div class="container">
+<div class="container"><br><br><br>
 	<div class="row">
 		<div class="col-sm-12">
 			<h3><?=$dados['titulo'];?></h3>
@@ -22,7 +21,7 @@ $videoMP = "<video width='320' height='240' controls><source src='$urlvid' type=
 			<p><strong>E-mail:</strong> <?=$dados['emailOrg'];?></p>
 			<p><strong>Inicio das incrições:</strong> <?php echo date('d/m/Y', strtotime($dados['dataIniInsc'])); ?></p>
 			<p><strong>Fim das inscrições: </strong><?php echo date('d/m/Y', strtotime($dados['dataFimInsc'])); ?></p>
-			<p><strong>Valor: </strong><?=$dados['preco'];?></p>
+			<p><strong>Valor: R$</strong><?=$dados['preco'];?></p>
 
 		</div>
 		<div class="col-sm-5">

@@ -5,7 +5,7 @@ include_once("config.inc.php");
 $busca = "SELECT * FROM evento_insc ORDER BY RAND() LIMIT 4";
 $todos = mysqli_query($conexao, $busca);
  ?>   
-   <div class="diveventos">
+   <div class="diveventos"><br><br><br>
    <div class="container">
    
         <!--
